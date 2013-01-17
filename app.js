@@ -10,6 +10,7 @@ app.configure(function() {
 });
 
 app.get('/', function(req, res){          // Обрабатываем запрос корневой страницы "/"
+	node test.js
     res.render('index.html');
 	//res.send('hello world');
 });
