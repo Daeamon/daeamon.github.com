@@ -1,109 +1,97 @@
-<!DOCTYPE HTML>
-<html>
-
+﻿<!doctype html>
+<html lang="en">
 <head>
-  <title>CSS3_six_dark</title>
-  <meta name="description" content="website description" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+<meta charset="UTF-8">
+<title>Minimalism - Home</title>
+<link rel="icon" href="images/favicon.gif" type="image/x-icon"/>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+<link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
+<link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
-
 <body>
-  <div id="main">
+   <div class="bg">
+    <!--start container-->
+    <div id="container">
+    <!--start header-->
     <header>
-      <div id="logo">
-        <div id="logo_text">
-          <!-- class="logo_colour", allows you to change the colour of the text -->
-          <h1><a href="index.html">Daeamon<span class="logo_colour"> резюме, портфолио</span></a></h1>
-          <h2>Разработка сайтов, верстка под популярные CMS, HTML верстка...</h2>
-        </div>
-      </div>
-      <nav>
-        <div id="menu_container">
-          <ul class="sf-menu" id="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="examples.html">Examples</a></li>
-            <li><a href="page.html">A Page</a></li>
-            <li><a href="another_page.html">Another Page</a></li>
-            <li><a href="#">Example Drop Down</a>
-              <ul>
-                <li><a href="#">Drop Down One</a></li>
-                <li><a href="#">Drop Down Two</a>
-                  <ul>
-                    <li><a href="#">Sub Drop Down One</a></li>
-                    <li><a href="#">Sub Drop Down Two</a></li>
-                    <li><a href="#">Sub Drop Down Three</a></li>
-                    <li><a href="#">Sub Drop Down Four</a></li>
-                    <li><a href="#">Sub Drop Down Five</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Drop Down Three</a></li>
-                <li><a href="#">Drop Down Four</a></li>
-                <li><a href="#">Drop Down Five</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.php">Contact Us</a></li>
-          </ul>
-        </div>
+      <!--start logo-->
+      <a href="#" id="logo"><img src="images/logo.png" width="180" height="43" alt="logo"/></a>    
+      <!--end logo-->
+      <!--start menu-->
+  	   <nav>
+         <ul>
+         <li><a href="#" class="current">Home</a></li>
+         <li><a href="#">About us</a></li>
+     	   <li><a href="#">Services</a></li>
+     	   <li><a href="#">Portfolio</a></li>
+         <li><a href="#">News</a></li>
+         <li><a href="#">Contact</a></li>
+         </ul>
       </nav>
-    </header>
-    <div id="site_content">
-      <div id="sidebar_container">
-        <div class="sidebar">
-          <h3>Latest News</h3>
-          <h4>New Website Launched</h4>
-          <h5>January 1st, 2012</h5>
-          <p>2012 sees the redesign of our website. Take a look around and let us know what you think.<br /><a href="#">Read more</a></p>
-        </div>
-        <div class="sidebar">
-          <h3>Useful Links</h3>
-          <ul>
-            <li><a href="#">First Link</a></li>
-            <li><a href="#">Another Link</a></li>
-            <li><a href="#">And Another</a></li>
-            <li><a href="#">Last One</a></li>
-          </ul>
-        </div>
+  	   <!--end menu-->
+      <!--end header-->
+	</header>
+   <!--start intro-->
+   <section id="intro">
+      <hgroup>
+      <h1>"Simplicity is the ultimate sophistication"<span>- Leonardo da Vinci</span></h1>
+      <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+      Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</h2>
+      </hgroup>
+   </section>
+   <!--end intro-->
+   <!--start holder-->
+   <div class="holder_content">
+      <section class="group1">
+         <h3>About us</h3>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+         Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy.</p>
+         <a class="photo_hover3" href="#"><img src="images/picture1.jpg" width="240" height="214" alt="picture1"/></a>
+         <a href="#"><span class="button">Read more</span></a>   
+       </section>
+      <section class="group2">
+         <h3>Services</h3>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+         Vestibulum condimentum  facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy.</p>
+         <a class="photo_hover3" href="#"><img src="images/picture2.jpg" width="240" height="214" alt="picture1"/></a>
+         <a href="#"><span class="button">Read more</span></a>   
+       </section>
+      <section class="group3">
+         <h3>Latest news</h3>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. 
+         Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy.   </p>
+         <a class="photo_hover3" href="#"><img src="images/picture3.jpg" width="240" height="214" alt="picture1"/></a>
+         <a href="#"><span class="button">Read more</span></a>   
+   	</section>
+	</div>
+	<!--end holder-->
+   <!--start holder-->
+   <div class="holder_content">
+      <section class="group4">
+         <h3>Latest article</h3>
+         <article>
+         <h4>22.08.2011  - Design to express </h4>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
+         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst.</p>
+         </article> 
+       </section>
+   </div>
+   <!--end holder-->
+   </div>
+   <!--end container-->
+   <!--start footer-->
+   <footer>
+      <div class="container">  
+         <div id="FooterTwo"> © 2011 Minimalism </div>
+         <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a> </div> 
       </div>
-      <div class="content">
-        <img style="float: left; vertical-align: middle; margin: 0 10px 0 0;" src="images/home.png" alt="home" />
-        <h1 style="margin: 15px 0 0 0;">Добро пожаловать на мой сайт</h1>
-        <div style="clear:both"></div>
-        <p>Опыт работы:<br>
-          Май 2011 — декабрь 2012 (1 год 8 месяцев)<br>
-          ЭкоСофт (Иркутск) — Информационные технологии/системная интеграция<br>
-          Программист, по совместительству верстальщик<br>
-          Разработка сайтов<br>
-          Верстка макетов<br>
-          Разработка компонентов, модулей для CMS Joomla<br>
-        Доработка и поддержка сайтов компании</p>
-        <p><br>
-        Март 2009 — май 2011 (2 года 3 месяца)<br>
-          Фриланс (Иркутск) — Информационные технологии/системная интеграция<br>
-          Программист, по совместительству верстальщик<br>
-        Разработка сайтов, верстка макетов, модификация компонентов\модулей\плагинов для различных CMS</p>
-        <p><br>
-          Ноябрь 2008 — март 2009 (5 месяцев)<br>
-          Инсайт (Иркутск) — Информационные технологии/системная интеграция<br>
-          Программист, по совместительству верстальщик<br>
-          Блочная верстка шаблонов<br>
-          Привязка к движку<br>
-        Реализация модулей системы</p>
-      </div>
-    </div>
-  </div>
-  <p>&nbsp;</p>
-  <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
-</body>
+   </footer>
+   <!--end footer-->
+   </div>
+   <!--end bg-->
+   <!-- Free template distributed by http://freehtml5templates.com -->
+  </body>
 </html>
