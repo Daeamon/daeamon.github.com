@@ -103,13 +103,32 @@
         dataType: "xml",
         success: xmlParser
     });
-});
+}
+,
+function () {
+    $.ajax({
+        type: "GET",
+        url: "jobs.xml",
+        dataType: "xml",
+        success: xmlParserJobs
+    });
+}
+);
 
 function xmlParser(xml) {
 
     $(xml).find("Book").each(function () {
 
         $("#test").append('<div class="book"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Published ' + $(this).find("Date").text() + '</div></div>');
+
+    });
+
+}
+function xmlParserJobs(xml) {
+
+    $(xml).find("job").each(function () {
+
+        $("#test").append(' ' + $(this).find("date").text() + ' ' + $(this).find("company_name").text() + ' ' + $(this).find("post").text() + ' ' + $(this).find("responsibility").text() + ' ');
 
     });
 
