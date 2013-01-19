@@ -125,7 +125,9 @@ function xmlParserJobs(xml) {
 
     $(xml).find("job").each(function () {
 
-        $("#test").append(' ' + $(this).find("date").text() + ' ' + $(this).find("company_name").text() + ' ' + $(this).find("post").text() + ' ' + $(this).find("responsibility").find('res').each(function () {'<br />' + $(this).text();}));
+        $("#test").append(' ' + $(this).find("date").text() + ' ' + $(this).find("company_name").text() + ' ' + $(this).find("post").text() + ' ');
+		
+		$(this).find("responsibility res").each(function () {$("#test").append('<br />' + $(this).text());});
 
     });
 
