@@ -183,9 +183,8 @@ h4 {
 }
 	
 header {
-	position: relative;
-	float: left;
-	width: 100%;
+	float: right;
+	width: 460px;
 	height: 100px;
 }
 	
@@ -195,7 +194,7 @@ header {
 ***************************************************/	
 	
 #intro {
-	width: 980px;
+	width: 460px;
 	position: relative;
 	float: left;
 	height: 120px;
