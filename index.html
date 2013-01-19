@@ -96,7 +96,25 @@
    <!-- Free template distributed by http://freehtml5templates.com -->
    	<script>
 	//$('#test').append($.get("test.txt"));
-	$('#test').load('test.txt');
+	$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "books.xml",
+        dataType: "xml",
+        success: xmlParser
+    });
+});
+
+function xmlParser(xml) {
+
+    $(xml).find("Book").each(function () {
+
+        $("#test").append('<div class="book"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Published ' + $(this).find("Date").text() + '</div></div>');
+
+    });
+
+}
+
 	</script>
   </body>
 </html>
