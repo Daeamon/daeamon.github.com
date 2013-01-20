@@ -1,37 +1,21 @@
 var express = require('express');
 var app = express();
- 
+
 app.configure(function() {
-    app.engine('html', require('uinexpress').__express) // Используем функцию "template" библиотеки underscore для рендеринга
+    app.engine('html', require('uinexpress').__express) // РСЃРїРѕР»СЊР·СѓРµРј С„СѓРЅРєС†РёСЋ "template" Р±РёР±Р»РёРѕС‚РµРєРё underscore РґР»СЏ СЂРµРЅРґРµСЂРёРЅРіР°
     app.set('view engine', 'html')                      
     app.set('views', __dirname + "/tpl");
-    app.set("view options", {layout: 'layout.html'});   // Файл layout.html по умолчанию будет оборачивать все шаблоны
-    app.use(express.static(__dirname + "/public"));     // Делаем файлы из папки public доступными на сайте
+    app.set("view options", {layout: 'layout.html'});   // Р¤Р°Р№Р» layout.html РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ Р±СѓРґРµС‚ РѕР±РѕСЂР°С‡РёРІР°С‚СЊ РІСЃРµ С€Р°Р±Р»РѕРЅС‹
+    app.use(express.static(__dirname + "/public"));     // Р”РµР»Р°РµРј С„Р°Р№Р»С‹ РёР· РїР°РїРєРё public РґРѕСЃС‚СѓРїРЅС‹РјРё РЅР° СЃР°Р№С‚Рµ
 });
 
-app.get('/', function(req, res){          // Обрабатываем запрос корневой страницы "/"
-    //res.render('index.html');
-	var walk    = require('walk');
-	var files   = [];
-
-	// Walker options
-	var walker  = walk.walk('./test', { followLinks: false });
-
-	walker.on('file', function(root, stat, next) {
-		// Add this file to the list of files
-		files.push(root + '/' + stat.name);
-		next();
-	});
-
-	walker.on('end', function() {
-		console.log(files);
-	});
+app.get('/', function(req, res){          // РћР±СЂР°Р±Р°С‚С‹РІР°РµРј Р·Р°РїСЂРѕСЃ РєРѕСЂРЅРµРІРѕР№ СЃС‚СЂР°РЅРёС†С‹ "/"
+    res.render('index.html');
 });
-/*
-app.get('/portfolio', function(req, res){ // Обрабатываем запрос страницы "/portfolio"
+app.get('/portfolio', function(req, res){ // РћР±СЂР°Р±Р°С‚С‹РІР°РµРј Р·Р°РїСЂРѕСЃ СЃС‚СЂР°РЅРёС†С‹ "/portfolio"
     res.render('portfolio.html');
 });
-*/
+
 var port = process.env.PORT || 5000;       
-app.listen(port)                           // Запускаем сервер на 5000 порту, если не указана переменная окружения "port" 
-console.log("Listening at " + port)        // Пишем в консоль, что запустились
+app.listen(port)                           // Р—Р°РїСѓСЃРєР°РµРј СЃРµСЂРІРµСЂ РЅР° 5000 РїРѕСЂС‚Сѓ, РµСЃР»Рё РЅРµ СѓРєР°Р·Р°РЅР° РїРµСЂРµРјРµРЅРЅР°СЏ РѕРєСЂСѓР¶РµРЅРёСЏ "port" 
+console.log("Listening at " + port)        // РџРёС€РµРј РІ РєРѕРЅСЃРѕР»СЊ, С‡С‚Рѕ Р·Р°РїСѓСЃС‚РёР»РёСЃСЊ
