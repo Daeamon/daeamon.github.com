@@ -139,15 +139,10 @@ padding: 6px;
 -webkit-box-shadow: inset 0px 3px 3px 0px rgba(255, 255, 255, 1), inset 0px -3px 3px 0px rgba(255, 255, 255, 1);
 box-shadow: inset 0px 3px 3px 0px rgba(255, 255, 255, 1), inset 0px -3px 3px 0px rgba(255, 255, 255, 1);
 
-transition: box-shadow 2s;
--moz-transition: box-shadow 2s; /* Firefox 4 */
--webkit-transition: box-shadow 2s; /* Safari and Chrome */
--o-transition: box-shadow 2s; /* Opera */
-
-transition: -webkit-box-shadow 2s;
--moz-transition: -webkit-box-shadow 2s; /* Firefox 4 */
--webkit-transition: -webkit-box-shadow 2s; /* Safari and Chrome */
--o-transition: -webkit-box-shadow 2s; /* Opera */
+transition: all;
+-moz-transition: all; /* Firefox 4 */
+-webkit-transition: all; /* Safari and Chrome */
+-o-transition: all; /* Opera */
 }
 #slider .thumbholder img:hover
 {
