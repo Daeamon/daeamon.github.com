@@ -6,7 +6,10 @@
 ***************************************************
 			      Reset
 ***************************************************/
-
+body
+{
+position:relative;
+}
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, form, label, legend, caption, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section, summary {
    margin: 0;
 	padding: 0;
