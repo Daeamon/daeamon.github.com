@@ -227,6 +227,10 @@ header {
 .holder_content_separator{
 	margin-bottom: 20px;
 }
+.holder_content .button
+{
+	display:none;
+}
 	
 /***************************************************
 			        GALLERY
