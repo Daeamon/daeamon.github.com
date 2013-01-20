@@ -80,7 +80,7 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 #slider .thumbholder {float:right; width:500px; text-align:right}
 #slider h2 {font: 2.2em 'FertigoProRegular', Arial, Helvetica, sans-serif; margin-bottom:10px; color:#fff;}
 #slider {height:232px; width:980px; padding-top:45px;}
-#slider .container {overflow:hidden; position:relative; cursor:pointer; color:#ddd; height:232px;  width:980px;}
+#slider .container {overflow:hidden; position:relative; cursor:pointer; color:#ddd; height:268px;  width:980px;}
 #slider .slides li {display:block; height:242px; width:980px; position:absolute; overflow:hidden; left:0; top:0;}
 #slider li .txtholder {float:left; width:470px;}
 .slides {position:relative;}
@@ -107,6 +107,7 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 .subhead {height:50px; line-height:50px; font:bold 2.6em 'TeXGyreAdventor', Arial, sans-serif; text-shadow:#fff 1px 1px 1px;}
 #left ul li {display:block; background:url(images/listbullet.gif) left center no-repeat; line-height:22px; margin-bottom:5px; padding-left:25px;}
 #left ul {margin-left:15px; margin-bottom:15px;}
+
 #contents.normalcontents {background-image:none!important;}
 .blogpreview {padding-top:15px;}
 .postpreview h3, .post h3 {font:normal 2.2em 'FertigoProRegular', Arial, Helvetica, sans-serif!important;}
@@ -130,7 +131,26 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border:solid 1px; border-color:#bbb #999 #999 #bbb; font: bold 1.4em 'TeXGyreAdventor', Arial, sans-serif; color:#777; background:#efefef;}
 .text-area:focus, .textfield:focus {border:solid 1px #666;}
 
+#slider .txtholder p:hover
+{
+color: rgba(255,255,255,1);
+text-shadow: 3px 3px 5px rgba(0,0,0,1),-3px -3px 5px rgba(0,0,0,1);
+}
 
+#slider .txtholder p
+{
+display: block;
+/*background: url(images/1.png) left center no-repeat;
+padding-left: 25px;*/
+line-height: 22px;
+margin-bottom: 5px;
+
+
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease; /* Firefox 4 */
+-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+-o-transition: all 0.5s ease; /* Opera */
+}
 
 #slider .thumbholder img 
 {
