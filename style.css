@@ -82,7 +82,7 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 #slider {height:232px; width:980px; padding-top:45px;}
 #slider .container {overflow:hidden; position:relative; cursor:pointer; color:#ddd; height:232px;  width:980px;}
 #slider .slides li {display:block; height:242px; width:980px; position:absolute; overflow:hidden; left:0; top:0;}
-#slider li .txtholder {float:left; width:470px; padding-top:35px;}
+#slider li .txtholder {float:left; width:470px;}
 .slides {position:relative;}
 #slider .slides p {font-size:1.4em; line-height:24px;}
 #slider .pagination {
