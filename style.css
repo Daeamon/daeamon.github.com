@@ -129,3 +129,11 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 .form .button {padding: 15px 0 0; height:45px;}
 input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border:solid 1px; border-color:#bbb #999 #999 #bbb; font: bold 1.4em 'TeXGyreAdventor', Arial, sans-serif; color:#777; background:#efefef;}
 .text-area:focus, .textfield:focus {border:solid 1px #666;}
+
+
+
+#slider .thumbholder img 
+{
+background:#000;
+padding:3px;
+}
