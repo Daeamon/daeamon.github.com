@@ -209,5 +209,30 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 </footer>
 
 </section>
+	<script>
+	$(document).ready(function () {
+		/*$.ajax({
+			url: "modules/",
+			success: function(data){
+			 $(data).find("a:contains(.jpg)").each(function(){
+				// will loop through 
+				var images = $(this).attr("href");
+
+				$('<p></p>').html(images).appendTo('#sidebar')
+
+			 });
+			}
+		});*/
+		$.ajax({
+		  url: "/modules",
+		  success: function(data){
+			 $(data).find("a:contains(.jpg)").each(function(){
+				// will loop through 
+				alert("Found a file: " + $(this).attr("href"));
+			 });
+		  }
+		});
+	});
+	</script>
 </body>
 </html>
