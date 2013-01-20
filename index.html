@@ -1,144 +1,219 @@
-﻿<!doctype html>
-<html lang="en">
+<!doctype html>
+
+<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<title>Minimalism - Home</title>
-<link rel="icon" href="images/favicon.gif" type="image/x-icon"/>
- <!--[if lt IE 9]>
- <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-<link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon"/> 
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script type="text/javascript" src="/js/rokbox/mootools-release-1.11.js"></script>
-<script type="text/javascript" src="/js/rokbox/rokbox.js"></script>
-<link href="/js/rokbox/themes/light/rokbox-style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="/js/rokbox/themes/light/rokbox-config.js"></script>
+<meta charset="UTF-8" />
+<title>Home | HTML5 Template Portfolio</title>
+ <link href="style.css" rel="stylesheet" type="text/css" />
+ <!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="js/belatedPNG.js"></script>
+<script>
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]--><script src="js/jquery-1.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/loopedslider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+	$(function(){
+		$('#slider').loopedSlider({
+			autoStart: 6000,
+			restart: 5000
+		});
+		
+	});
+</script>
 </head>
+
 <body>
-   <div class="bg">
-    <!--start container-->
-    <div id="container">
-    <!--start header-->
-    <header>
-      <!--start logo-->
-      <a href="#" id="logo"></a>    
-      <!--end logo-->
-      <!--start menu-->
-  	   <nav>
-         <ul>
-         <li><a href="#" class="current">Home</a></li>
-         <li><a href="#">About us</a></li>
-     	   <li><a href="#">Services</a></li>
-     	   <li><a href="#">Portfolio</a></li>
-         <li><a href="#">News</a></li>
-         <li><a href="#">Contact</a></li>
-         </ul>
-      </nav>
-  	   <!--end menu-->
-      <!--end header-->
-	</header>
-   <!--start intro-->
-   <section id="intro">
-      <hgroup>
-      <h1>Daeamon<span> резюме, портфолио</span></h1>
-      <h2>Разработка сайтов, верстка под популярные CMS, HTML верстка...</h2>
-      </hgroup>
-   </section>
-   <!--end intro-->
-   <!--start holder-->
-   <div class="holder_content">
-      <section class="group1">
-         <h3>ООО «Фортуна турс & трэвел»</h3>
-         <p></p>
-         <a class="photo_hover3" href="port/ft.jpg" rel="rokbox"><img src="port/ft_t.jpg" width="240" height="214" alt="Fortuna tours"/></a>
-         <a href="#"><span class="button">Read more</span></a>   
-       </section>
-      <section class="group2">
-         <h3>Редакция журнала «proДеньги»</h3>
-         <p></p>
-         <a class="photo_hover3" href="port/pr.jpg" rel="rokbox"><img src="port/pr_t.jpg" width="240" height="214" alt="Prodengy"/></a>
-         <a href="#"><span class="button">Read more</span></a>   
-       </section>
-      <section class="group3">
-         <h3>Техно Николь</h3>
-         <p></p>
-         <a class="photo_hover3" href="port/tn.jpg" rel="rokbox"><img src="port/tn_t.jpg" width="240" height="214" alt="TN Electric"/></a>
-         <a href="#"><span class="button">Read more</span></a>   
-   	</section>
-	</div>
-	<!--end holder-->
-   <!--start holder-->
-   <div class="holder_content">
-      <section class="group4">
-         <h3>Latest article</h3>
-         <article>
-         <h4>22.08.2011  - Design to express </h4>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst. Nulla nonummy. Cras quis libero.</p>
-         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec molestie. Sed aliquam sem ut arcu. Phasellus sollicitudin. Vestibulum condimentum facilisis nulla. In hac habitasse platea dictumst.</p>
-         </article> 
-       </section>
-   </div>
-   <!--end holder-->
-   </div>
-   <!--end container-->
-   <!--start footer-->
-   <footer>
-      <div class="container">  
-         <div id="FooterTwo"> © 2011 Minimalism </div>
-         <div id="FooterTree"> Valid html5, design and code by <a href="http://www.marijazaric.com">marija zaric - creative simplicity</a> </div> 
-      </div>
-   </footer>
-   <!--end footer-->
-   <div id="test"></div>
-   </div>
-   <!--end bg-->
-   <!-- Free template distributed by http://freehtml5templates.com -->
-   	<script>
-	//$('#test').append($.get("test.txt"));
-	/*$(document).ready(function () {
-    $.ajax({
-        type: "GET",
-        url: "books.xml",
-        dataType: "xml",
-        success: xmlParser
-    });
-	$.ajax({
-        type: "GET",
-        url: "jobs.xml",
-        dataType: "xml",
-        success: xmlParserJobs
-    });
-}
-);*/
+<section id="page">
+<div id="bodywrap">
+<section id="top">
+<nav>
+<h1 id="sitename">
+  <a href="#">Portfolio | Premium CSS Template </a></h1>
+  
+  <ul id="sitenav">
+  	<li class="current"><a href="index.html">Home</a></li>
+  	<li><a href="services">Services</a></li>
+    <li><a href="about">About</a></li>
+    <li><a href="blog">Blog</a></li>
+    <li><a href="contact">Contact</a></li>
+  
+  </ul>
+  
+</nav>
+<header id="homeheader">
 
-function xmlParser(xml) {
 
-    $(xml).find("Book").each(function () {
+<div id="slider">	
+	<div class="container">
+	<ul class="slides">
+			<li>
+			  <div class="thumbholder"><img src="images/slideimg2.gif" width="413" height="220" alt="First Image" /></div><div class="txtholder">
+            <h2>Modern, Accessible and beautiful Websites and web applications</h2>
+            <p>Lorema psum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+			</div></li>
+			<li><div class="thumbholder"><img src="images/slideimg1.gif" width="413" height="220" alt="First Image" /></div><div class="txtholder">
+            <h2>Modern, Accessible and beautiful Websites and web applications</h2>
+            <p>Lorema psum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+			</div></li>
+			<li>
+			  <div class="thumbholder"><img src="images/slideimg2.gif" width="413" height="220" alt="First Image" /></div><div class="txtholder">
+            <h2>Modern, Accessible and beautiful Websites and web applications</h2>
+            <p>Lorema psum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+			</div></li>
+			<li><div class="thumbholder"><img src="images/slideimg1.gif" width="413" height="220" alt="First Image" /></div><div class="txtholder">
+            <h2>Modern, Accessible and beautiful Websites and web applications</h2>
+            <p>Lorema psum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+			</div></li>
+	
+			
+		</ul>
+	
+	<ul class="pagination">
+		<li><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
 
-        $("#test").append('<div class="book"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Published ' + $(this).find("Date").text() + '</div></div>');
+	</ul>	
+    </div>
+</div>
 
-    });
 
-}
-function xmlParserJobs(xml) {
+</header>
+</section>
+<section id="contentwrap">
+<div id="contents">
+<div id="topcolumns">
+<div class="col">
+<img src="images/graph.png" width="61" height="40" alt="graph" class="imgright">
+<h2>See the results</h2>
+<p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. Mauris elit sapien, ultricies ac congue at, facilisis at metus. Maecenas imperdiet justo vel dolor eleifend id vulputate erat feugiat.  <a href="#">Read More</a></p>
+</div>
+<div class="col">
+<img src="images/flowchart.png" width="62" height="39" alt="graph" class="imgright">
+<h2>Easy to manage</h2>
+<p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. Mauris elit sapien, ultricies ac congue at, facilisis at metus. Maecenas imperdiet justo vel dolor eleifend id vulputate erat feugiat.  <a href="#">Read More</a></p>
 
-    $(xml).find("job").each(function () {
+</div>
+<div class="col">
+<img src="images/ok.png" width="37" height="40" alt="graph" class="imgright">
+<h2>Customer Support</h2>
+<p>Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. 
+Integer egestas purus bibendum 
+neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae.  Mauris elit sapien, ultricies ac congue at, facilisis at metus. Maecenas imperdiet justo vel dolor eleifend id vulputate erat feugiat.  <a href="#">Read More</a></p>
 
-        $("#test").append(' ' + $(this).find("date").text() + ' ' + $(this).find("company_name").text() + ' ' + $(this).find("post").text() + ' ');
-		$(this).find("responsibility res").each
-		(
-			function () 
-			{
-				$("#test").append('<div class="res">' + $(this).text() + '</div>');
-			}
-		);
+</div>
+<div class="clear"></div>
 
-    });
+</div>
+<section id="normalpage">
 
-}
+<section id="left">
 
-	</script>
-  </body>
+<h2>About Us</h2>
+<article>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisl urna, aliquam vitae vehicula eu, vulputate nec risus. Suspendisse mollis, purus sed aliquam volutpat, ipsum elit euismod libero, ut lobortis orci risus nec sapien. In magna magna, dictum quis auctor vel, gravida a lorem. Mauris elit sapien, ultricies ac congue at, facilisis at metus. Maecenas imperdiet justo vel dolor eleifend id vulputate erat feugiat. Praesent pharetra, mi blandit venenatis congue, arcu mi pulvinar lectus</p>
+
+<h3>Heading Three</h3>
+<p>At rutrum nunc ante in orci. Integer quis odio a massa dignissim sollicitudin eget quis leo. Etiam a mi dolor, nec vestibulum erat. Aliquam eget elit nibh, at egestas massa. Ut pharetra consequat justo, non hendrerit quam tristique pharetra. Praesent est justo, congue commodo malesuada ac, fermentum ut odio. Pellentesque sit amet eleifend nibh. <a href="#">Read More</a></p>
+
+</article>
+<h2>Latest From The Blog</h2>
+
+</section>
+<section id="sidebar">
+<h2>Testimonials</h2>
+<article class="testimonials">
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas purus bibendum neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+<cite>John Doe, New York City</cite>
+</blockquote>
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer egestas purus bibendum neque aliquam ut posuere elit semper. Fusce sagittis pharetra eros, sit amet consequat sem mollis vitae. </p>
+<cite>John Doe, New York City</cite>
+</blockquote>
+</article>
+</section>
+
+<div class="clear"></div>
+</section>
+</div>
+</section>
+</div>
+<footer id="pagefooter">
+<div id="bottom">
+<div class="block1">
+<h2>Meet The Team</h2>
+
+<div class="teamimg">
+
+
+<div class="imgthmb">
+  <img src="images/team5.jpg" width="65" height="65" alt="team"></div>
+  <div class="imgthmb">
+  <img src="images/team1.jpg" width="65" height="65" alt="team"></div>
+  <div class="imgthmb">
+  <img src="images/team2.jpg" width="65" height="65" alt="team"></div>
+  <div class="imgthmb">
+  <img src="images/team4.jpg" width="65" height="65" alt="team"></div>
+  <div class="imgthmb">
+  <img src="images/team2.jpg" width="65" height="65" alt="team"></div>
+  <div class="imgthmb">
+  <img src="images/team1.jpg" width="65" height="65" alt="team"></div>
+</div>
+</div>
+<div class="block2">
+<h2>Latest Project</h2>
+<div class="projectthmb"> <a href="portfolio"><img src="images/latstproject.jpg" width="240" height="150" alt="project"></a></div>
+
+</div>
+<div class="block3">
+
+<h2>More About</h2>
+<p>PROFESSIONAL PORTFOLIO is a Template suitable for Businesses, Web Design Firms or any I.T related company that require a place to showcase their works. 
+This template is released under Creative Commons Attribution License. </p>
+
+</div>
+<div class="clear"></div>
+</div>
+<div id="credits">
+<p>
+<span class="copyright">
+&copy; 2010 | Your Company Name |  All Rights Reserved | Professional Portfolio is a CSS Template relealsed by CSSHeaven</span>
+<span id="designcredit">
+<!--Creative Common Non-Commercial, Attribution License
+Designed by : Roshan Ravi
+Author URI : cssheaven.org
+Do Not Remove this Credits and Link back to CSSHeaven from the template-->
+<a href="http://cssheaven.org" title="Free CSS Website Template by CSSHeaven">Website Template</a>
+<!--Design Credits--> by CSSHeaven.org </span>
+</p>
+</div>
+</footer>
+
+</section>
+</body>
 </html>
