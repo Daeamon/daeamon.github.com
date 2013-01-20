@@ -1,0 +1,23 @@
+.page#app
+	div.headline
+		h2 Edit 
+			a(href='/apps/'+appname) #{appname}
+	
+	form#app-edit(action="apps/update")
+		label(for="appname") Application: 
+		input(name="appname", readonly="readonly", value=appname)
+		
+		label(for="adddomain") Domain: 
+		input(name="appdomain", value="")
+		
+		label(for="start") Server: 
+		input(name="start", value=app.start)
+		
+		fieldset#modules
+			!= partial('app/modules', {})
+	
+		input.submit.r5.bluegrad(type="submit", value="Update")
+	
+	p 
+	
+	a(href="/apps/"+appname+"/delete",rel="modal",class="app-delete button redgrad r5") Delete App

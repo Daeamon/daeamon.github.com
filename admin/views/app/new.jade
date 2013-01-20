@@ -1,0 +1,10 @@
+h1 Create New App
+form(method="post",action="/apps", class="form", name="formAppCreate", onsubmit="ajaxFormSubmit('formAppCreate'); return false;")
+  p
+    label Application name: 
+    input(type="text", class="text",name="appname", placeholder="no spaces pls")
+  p 
+    label Server file: 
+    input(type="text", class="text", name="start")
+  
+  input.submit.r5.bluegrad(type="submit", value="Create")

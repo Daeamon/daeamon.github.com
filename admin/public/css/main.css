@@ -1,0 +1,631 @@
+/* Resets
+------ */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Basic tags */
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:#4b4b4b;
+  background:#fff;
+}
+
+h1,h2,h3 {
+  line-height:1.2em;
+}
+
+ul,ol {
+  padding-left:2em;
+}
+
+p {
+  line-height:1.2em;
+  padding:0.5em 0;
+}
+
+*:focus {outline: none;}
+
+a {
+  color: #1d64a0;
+}
+
+/* Common styles */
+.fr {
+	float:right;
+}
+
+.fl {
+	float:left;
+}
+
+.oh {
+	overflow:hidden;
+}
+
+.cl {
+	clear:both;
+}
+
+
+.r5 {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  /* useful if you don't want a bg color from leaking outside the border: */        
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+.r10 {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /* useful if you don't want a bg color from leaking outside the border: */        
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+
+.bluegrad {
+  background-color: #3289d3;
+  background-image: -moz-linear-gradient(top, #3289d3, #1a6db4); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #3289d3, #1a6db4); /* IE10 */
+  background-image: -o-linear-gradient(top, #3289d3, #1a6db4); /* Opera 11.10+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3289d3), to(#1a6db4)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #3289d3, #1a6db4); /* Chrome 10+, Saf5.1+ */
+  background-image: linear-gradient(top, #3289d3, #1a6db4);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3289d3', EndColorStr='#1a6db4'); /* IE6–IE9 */
+}
+
+.redgrad {
+  background-color: #cc3333;
+  background-image: -moz-linear-gradient(top, #cc3333, #660000); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #cc3333, #660000); /* IE10 */
+  background-image: -o-linear-gradient(top, #cc3333, #660000); /* Opera 11.10+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#cc3333), to(#660000)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #cc3333, #660000); /* Chrome 10+, Saf5.1+ */
+  background-image: linear-gradient(top, #cc3333, #660000);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#cc3333', EndColorStr='#660000'); /* IE6–IE9 */
+}
+
+
+.yellowgrad {
+  background-color: #ffff99;
+  background-image: -moz-linear-gradient(top, #ffff99, #ffcc33); /* FF3.6 */
+  background-image: -ms-linear-gradient(top, #ffff99, #ffcc33); /* IE10 */
+  background-image: -o-linear-gradient(top, #ffff99, #ffcc33); /* Opera 11.10+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff99), to(#ffcc33)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffff99, #ffcc33); /* Chrome 10+, Saf5.1+ */
+  background-image: linear-gradient(top, #ffff99, #ffcc33);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffff99', EndColorStr='#ffcc33'); /* IE6–IE9 */
+}
+
+.tooltip {
+	display:none;
+	position:relative;
+	background: #323232;
+	border-radius:5px;
+	/* margin-top: -15px; */
+	font-size:12px;
+	padding:5px;
+	color:#fff;	
+}
+.tooltip:after {
+   content:"";
+   position: absolute;
+   left: 50%;
+   margin-left:-13px;
+   bottom: -20px;
+   width: 0;
+   height: 0;
+   border-top: 26px solid #323232;
+   border-right: 13px solid transparent;
+   border-left: 13px solid transparent;
+   border-bottom:0;
+}
+
+.button {
+	padding: 8px 12px;
+	margin: 0 8px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button.bluegrad {
+	color: #eee;
+	border: solid 1px #08d;
+	text-shadow:1px 1px 0px #000;
+}
+
+.button.bluegrad:hover {
+	color: #fff;
+}
+
+.button.redgrad {
+	color: #fee;
+	border: solid 1px #d80;
+	text-shadow:1px 1px 0px #000;
+}
+
+.button.redgrad:hover {
+	color: #fff;
+}
+
+.button.yellowgrad {
+	color: #930;
+	border: solid 1px #a93;
+}
+
+.button.yellowgrad:hover {
+	 color: #f00;
+}
+
+
+/* Layout */
+header {
+	height: 100px;
+	background: #000;
+}
+
+#logo { 
+	float: left;
+	display: inline; 
+	margin-top: 15px;
+}
+#logo a { 
+	display: block;
+	width: 227px;
+	height: 70px;
+	margin-left: 24px;
+	background: url(../img/logo.jpg);
+	text-indent: -9999px;
+}
+
+/* - Top Menu */
+header hgroup {
+	float: right;
+}
+
+header hgroup ul {
+	list-style-type: none;
+	margin: 36px 48px 0 0;
+}
+
+header hgroup ul li{
+	float: left;
+	margin-right: 24px;
+}
+
+header hgroup ul a{
+	color: #fff;
+	text-decoration: none;
+}
+
+header hgroup ul a:hover{
+	text-decoration: underline;
+}
+
+.page {
+	background: #fff;
+	padding: 24px 48px;
+}
+
+.headline {
+	height: 92px;
+}
+
+.headline .gravatar {
+	float: left;
+	border: solid 1px #eee;
+	padding: 8px;
+}
+
+.headline h2 {
+	float: left;
+	padding: 12px 0 0 12px;
+}
+
+.headline .actions {
+	margin-top: 20px;
+}
+
+#content {
+	clear: both;
+	min-height:250px;
+}
+
+footer { 
+	clear: both;
+	position: relative;
+	bottom: 0;
+	padding: 48px;
+	background: #000;
+	color: #eee;
+	font-size:12px;
+}
+
+footer p {
+  margin:0;
+  padding:0.4em 0 ;
+  line-height:1.4em;
+}
+
+footer a {
+	 color: #ff6;
+}
+
+/* App Listings */
+section.app-listing {
+	padding: 0 24px 24px 24px;
+	margin-bottom: 24px;
+	background: #eee;
+	background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.03, rgb(200,200,200)),
+    color-stop(0.30, rgb(232,232,232))
+	);
+	background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(200,200,200) 3%,
+    rgb(232,232,232) 40%
+	);
+}
+
+section.app-listing hgroup {
+	padding-top: 12px;
+	margin-left: -16px;
+	height: 50px	
+}
+
+section.app-listing .app-running {
+	padding-left: 32px;
+	margin-left: 25px;
+	height: 32px;
+    background: url(../img/icons/app-running.png) 0 4px no-repeat;
+}
+
+section.app-listing .app-stopped {
+	padding-left: 32px;
+	margin-left: 25px;
+	height: 32px;
+    background: url(../img/icons/app-stopped.png) 0 4px no-repeat;
+}
+
+hgroup h3 {
+	float: left;
+	font-size: 1.5em;
+}
+
+hgroup h3 a {
+	line-height: 28px;
+	text-decoration: none;
+}
+
+
+hgroup h3 a:hover {
+	color: #444;
+}
+
+
+#home #content #apps {
+	float: left;
+	width: 79%;
+}
+
+#home #content #log {
+	float: right;
+	width: 19%;
+}
+
+
+.page#app #appdomain {
+	float: left;
+	padding: 16px;
+}
+
+
+/* - Properties */
+
+section hgroup ul.properties {
+	float: right;
+	list-style-type: none;
+	margin: 8px 0 0 0;
+	color:#444;
+}
+
+section hgroup ul.properties li{
+	float: left;
+	margin-right: 12px;
+}
+
+.git {
+	min-height: 48px;
+}
+.git .button{ 
+	float: left;
+	padding: 8px 10px 4px 10px;
+	font-size: 1.1em;
+	margin: 2px 10px 0; 	
+}	  
+
+
+.git input {
+	float: left;
+	width: 80%;
+	padding: 8px;
+	color: #666;
+	font-size: 1.2em;
+}
+
+
+/* - Actions */
+
+ul.actions {
+	float: right;
+	list-style-type: none;
+	margin-right: -8px;
+}
+
+ul.actions li{
+	float: left;
+}
+
+
+
+#log .status{
+	padding-bottom: 24px;
+}
+
+/* - links */
+#log .links li{
+	list-style-type: circle;
+}
+
+
+
+
+/* OLD */
+
+.sidebar {
+	width:200px;
+}
+
+ul.lnav {
+  padding:0;
+  list-style:none;
+  width:150px;
+  font-size:12px;
+}
+
+ul.snav {
+  /*display:none;*/
+}
+
+ul.snav > li {
+  padding:5px 0;
+}
+
+ul.lnav > li.first {
+  margin:0;
+}
+
+ul.lnav > li {
+  margin-top:2px;
+}
+
+ul.lnav > li > a {
+  display:block;
+  background:#ddd;
+  padding:0.5em 1em;
+  color:#555;
+  text-decoration:none;
+}
+
+ul.lnav > li > a:hover,
+ul.lnav > li.active > a {
+  background:#bbb;
+}
+
+ul.lnav > li.active ul.snav {
+  display:block;
+}
+
+
+.login_wrap {
+  width:420px;
+  margin: 48px auto;
+}
+
+span.label {
+  display:block;
+}
+
+fieldset {
+  border:1px solid #ddd;
+  padding:5px 20px 15px;
+}
+
+.input {
+  border:1px solid #ccc;
+  font-size:16px;
+  padding:5px;
+  -moz-box-shadow: -2px 2px 4px rgba(0,0,0,0.1) inset;
+  -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,0.1) inset inset;
+  -o-box-shadow: 2px 2px 4px rgba(0,0,0,0.1) inset inset;
+  box-shadow: -2px 2px 4px rgba(0,0,0,0.1) inset;
+}
+
+input.error {
+  border:1px solid firebrick;
+}
+
+.submit {
+  font-size:12px;
+  font-weight:700;
+  padding:5px 10px;
+  color:#fff;
+  border:0;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.3);
+}
+
+.submit:active {
+  background-color: #1d64a0;
+}
+
+p.log_info {
+  font-size:12px;
+}
+
+p.msg {
+  font-size:11px;
+  font-weight:700;
+  padding:10px;
+  text-shadow:0 -1px 1px rgba(0,0,0,0.3);
+}
+
+p#failed,
+p#incomplete {
+  background:firebrick;
+  color:#fff;
+}
+
+
+
+.tree,
+.table {
+  border-top: 1px solid #D8D8D8;
+  border-left: 1px solid #D8D8D8;
+  border-right: 1px solid #D8D8D8;
+  font-family: Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  font-size:12px;
+  margin: 0;
+  margin-bottom: 1em;
+  width:100%;
+}
+
+.tree th,
+.table th {
+  font-weight: normal;
+  background-color: #EAEAEA;
+  color: #999;
+  padding: .5em .3em;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+.tree td,
+.table td {
+  padding: .5em .7em;
+  color: #484848;
+  border-bottom: 1px solid #E1E1E1;
+  text-align:center;
+}
+
+.action span {
+  display:inline-block;
+  margin:0 5px;
+}
+
+
+/**** MODAL ****/
+.modal {
+  visibility: hidden;
+  top: 100px!important;
+  left: 50%;
+  margin-left:-260px;
+  position: fixed;
+  z-index: 1002;
+  width: 520px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  background:#fff;
+  min-height:200px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1003;
+  display: inline-block;
+}
+
+.modal-bg {
+  background: rgba(0,0,0,0.5);
+  width:100%;
+  height:100%;
+  position:absolute;
+  z-index:1001;
+  top:0;
+  left:0;
+}
+
+#modal_content {
+  padding:20px;
+}
+
+#modal_content h2 {
+  font-weight:200;
+}
+
+#modal_content h2 strong {
+  font-weight:700;
+}
+
+.table {
+  margin-top:10px;
+}
+
+.table td.label {
+  width:100px;
+}
+
+.table td.form_label {
+  width:150px;
+}
+
+.table td {
+  text-align:left;
+}
+
+.no_u {
+  text-decoration:none;
+}
+
+#loader {
+  display:none;
+}
+
+.form label {
+  width:150px;
+  display:inline-block;
+}
+
+.form input.text {
+  width:200px;
+  font-size:14px;
+}

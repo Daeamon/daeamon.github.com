@@ -1,0 +1,13 @@
+.page#home
+	div.headline
+		!=partial('index/welcome', {})
+		ul.actions
+			li
+				a(href="/apps/new",rel="modal",class="app_create button yellowgrad r5") Create New App
+			//li(class=(typeof(domainlist) != "undefined" ? "active" : ""))
+			//a(href="/appdomains") My Domains
+
+	#content
+		!= partial('index/apps', {})
+		
+		!= partial('index/log', {})

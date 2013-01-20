@@ -1,0 +1,10 @@
+.page#user
+	div.headline
+		h2 Edit #{username}
+	
+	form#user-edit(action="users/update")
+		label(for="username") Username: 
+		input(name="username", readonly="readonly", value=username)
+
+		input(type="submit", class="button bluegrad r5", value="Submit")
+		a(href="/users/"+username, class="button yellowgrad r5") Cancel

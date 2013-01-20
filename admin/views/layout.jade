@@ -1,0 +1,13 @@
+!!! 5
+html
+  head
+    //title=(text[route]["title"] != undefined) ? text[route]["title"] : "Nodester Admin Panel"
+    !=partial('layout/head', {})
+  body
+  !=partial('layout/header', {})
+
+  != body
+  !=partial('layout/footer', {})
+
+  !=partial('layout/modal', {})
+  !=partial('layout/scripts', {})

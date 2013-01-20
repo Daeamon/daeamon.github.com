@@ -1,0 +1,25 @@
+{
+  "author": "rowoot,tracend",
+  "name": "cp",
+  "version": "0.0.4",
+  "repository": {
+    "type": "git",
+    "url": "git@nodester.com:/node/git/rowoot/1498-460f957a53eb6348b7077e2289eb7868.git"
+  },
+  "main": "server.js",
+  "directories": {
+    "lib": "."
+  },
+  "engines": {
+    "node": "0.4.7"
+  },
+  "dependencies": {
+    "connect":">=v1.4.0",
+    "express":">=v2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "admin interface for nodester"
+}
