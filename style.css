@@ -137,7 +137,6 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 background: rgba(255,255,255,0.1);
 padding: 6px;
 -webkit-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1), inset 0px -3px 3px 0px rgba(0, 0, 0, 1);
-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1), inset 0px -3px 3px 0px rgba(0, 0, 0, 1);
 
 
 transition: all 0.5s ease;
