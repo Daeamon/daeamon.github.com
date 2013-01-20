@@ -9,15 +9,15 @@
 #rokbox-close span{display:none;}
 /* Table for border look and feel */
 #rokbox-top.rokbox-left{background:url(tl.png) 0 0 no-repeat;clear:both;}
-#rokbox-top .rokbox-right{background:url(tr.png) 100% 0 no-repeat;}
-#rokbox-top .rokbox-center{background:url(top.png) 0 0 repeat-x;height:20px;margin-left:20px;margin-right:20px;}
+#rokbox-top .rokbox-right {background: url(tr.png) 100% 0 no-repeat;padding-left: 1px;padding-right: 1px;}
+#rokbox-top .rokbox-center {background: url(top.png) 0 0 repeat-x;height: 19px;margin-left: 18px;margin-right: 18px;}
 #rokbox-middle {overflow: hidden;}
 #rokbox-middle.rokbox-left{background:url(left.png) 0 0 repeat-y;clear:both;}
 #rokbox-middle .rokbox-right{background:url(right.png) 100% 0 repeat-y;}
-#rokbox-middle .rokbox-center{background:#fff;margin-left:20px;margin-right:20px;}
+#rokbox-middle .rokbox-center {background: #fff;margin-left: 18px;margin-right: 20px;padding: 0 2px;}
 #rokbox-bottom.rokbox-left{background:url(bl.png) 0 0 no-repeat;}
-#rokbox-bottom .rokbox-right{background:url(br.png) 100% 0 no-repeat;}
-#rokbox-bottom .rokbox-center{background:url(bottom.png) 0 0 repeat-x;height:20px;margin-left:20px;margin-right:20px;}
+#rokbox-bottom .rokbox-right{background:url(br.png) 100% 0 no-repeat;padding: 0 1px;}
+#rokbox-bottom .rokbox-center {background: url(bottom.png) 0 0 repeat-x;height: 20px;margin-left: 18px;margin-right: 18px;}
 /* Object/Image container */
 #rokbox-container{}
 /* Spinner class that gets added when loading content and removed when loaded */
