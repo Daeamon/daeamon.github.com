@@ -216,19 +216,24 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 </section>
 	<script>
 	$(document).ready(function () {
-		xhr = new easyXDM.Rpc({
-			remote: "http://google.com"
-		}, {
-			remote: {
-				post: {}
-			}
-		});
-		xhr.post("index.html", {
-			param1: "foo",
-			param2: "bar"
-		}, function(da	ta){
-			alert(data.glossary.title);
-		});
+		function parseHTML()
+            {
+                $.ajax({
+                    url: 'http://google.com',
+                    type: 'get',
+                    dataType: 'html',
+                    dataFilter: function(html) {
+                        //вырезаю мусор в виде скриптов
+                        //из полученной страницы
+                    }, 
+                    success: function(html) {
+                        var html =  $(html);
+                        //html.find(........).text();
+						alert(html.text);
+                    }
+                })
+            }
+			parseHTML();
 		/*$.ajax({
 			url: "modules/",
 			success: function(data){
