@@ -221,11 +221,7 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
                 $.ajax({
                     url: 'http://google.com',
                     type: 'get',
-                    dataType: 'html',
-                    dataFilter: function(html) {
-                        //вырезаю мусор в виде скриптов
-                        //из полученной страницы
-                    }, 
+                    dataType: 'html', 
                     success: function(html) {
                         var html =  $(html);
                         //html.find(........).text();
