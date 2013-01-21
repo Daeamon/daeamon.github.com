@@ -134,6 +134,10 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 
 
 /*********************** injection by Daeamon 21.01.2013 **************************************/
+#sitenav
+{
+visibility:hidden;
+}
 #topcolumns .contented
 {
 transition: all 0.5s ease;
