@@ -115,7 +115,7 @@ if(typeof jQuery != 'undefined') {
 							}
 						} return false;
 					});
-
+/*
 					if (o.containerClick) {
 						$(o.container,$t).click(function(){
 							if(active===false) {
@@ -126,7 +126,7 @@ if(typeof jQuery != 'undefined') {
 								}
 							} return false;
 						});
-					}
+					}*/
 
 					$(pagination,$t).click(function(){
 						if ($(this).parent().hasClass("active")) {return false;}
