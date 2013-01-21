@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jobs>
+	<job>
+		<dates>
+		Май 2011 — декабрь 2012
+		</dates>
+		<titles>
+		ЭкоСофт (Иркутск)
+		</titles>
+		<post>
+		Программист, по совместительству верстальщик
+		</post>
+		<resps>
+			<resp>Разработка сайтов</resp>
+			<resp>Верстка макетов</resp>
+			<resp>Разработка компонентов, модулей для CMS Joomla</resp>
+			<resp>Доработка и поддержка сайтов компании</resp>
+		</resps>
+	</job>
+</jobs>
