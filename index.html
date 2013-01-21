@@ -216,15 +216,19 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 </section>
 	<script>
 	$(document).ready(function () {
-	var socket = new easyXDM.Socket({
-    remote: "http://easyxdm.net/wp/category/getting-started/",
-    onMessage: function(message, origin){
-        alert("Received '" + message + "' from '" + origin + "'");
-    },
-    onReady: function() {
-        socket.postMessage("Yay, it works!");
-    }
-});
+		xhr = new easyXDM.Rpc({
+			remote: "http://google.com"
+		}, {
+			remote: {
+				post: {}
+			}
+		});
+		xhr.post("index.html", {
+			param1: "foo",
+			param2: "bar"
+		}, function(da	ta){
+			alert(data.glossary.title);
+		});
 		/*$.ajax({
 			url: "modules/",
 			success: function(data){
