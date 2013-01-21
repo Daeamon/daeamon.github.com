@@ -24,6 +24,11 @@
 		
 	});
 </script>
+<script type="text/javascript" src="/js/xdm/easyXDM.debug.js"></script>
+<script type="text/javascript">
+    easyXDM.DomHelper.requiresJSON("/js/xdm/json2.js");
+</script>
+
 </head>
 
 <body>
@@ -211,6 +216,15 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 </section>
 	<script>
 	$(document).ready(function () {
+	var socket = new easyXDM.Socket({
+    remote: "http://github.com/Daeamon/daeamon.github.com",
+    onMessage: function(message, origin){
+        alert("Received '" + message + "' from '" + origin + "'");
+    },
+    onReady: function() {
+        socket.postMessage("Yay, it works!");
+    }
+});
 		/*$.ajax({
 			url: "modules/",
 			success: function(data){
@@ -223,15 +237,6 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 			 });
 			}
 		});*/
-		$.ajax({
-		  url: "http://github.com/Daeamon/daeamon.github.com",
-		  success: function(data){
-			 $(data).find("a:contains(.jpg)").each(function(){
-				// will loop through 
-				alert("Found a file: " + $(this).attr("href"));
-			 });
-		  }
-		});
 	});
 	</script>
 </body>
