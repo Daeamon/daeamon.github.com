@@ -134,6 +134,18 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 
 
 /*********************** injection by Daeamon 21.01.2013 **************************************/
+#topcolumns .contented
+{
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease; /* Firefox 4 */
+-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+-o-transition: all 0.5s ease; /* Opera */
+}
+#topcolumns .contented:hover
+{
+-webkit-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1);
+box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1);
+}
 #topcolumns ul li:hover 
 {
 color:#000;
