@@ -131,6 +131,14 @@ blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helveti
 input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border:solid 1px; border-color:#bbb #999 #999 #bbb; font: bold 1.4em 'TeXGyreAdventor', Arial, sans-serif; color:#777; background:#efefef;}
 .text-area:focus, .textfield:focus {border:solid 1px #666;}
 
+
+
+/*********************** injection by Daeamon 21.01.2013 **************************************/
+
+#topcolumns
+{
+
+}
 #slider .txtholder p:hover
 {
 color: rgba(255,255,255,1);
