@@ -66,8 +66,8 @@ blockquote {display:block; background:url(images/quote.png) left top no-repeat; 
 .testimonials blockquote {border-bottom:solid 1px #ddd; padding-bottom:10px; margin-bottom:10px;}
 blockquote p {margin-bottom:5px!important;}
 blockquote cite {display:block; font:italic 1.2em "Trebuchet MS", Arial, Helvetica, sans-serif; color:#000;}
-#pagefooter {background:url(images/footerbg.jpg) repeat-x; height:351px; width:100%; padding-top:11px;}
-#bottom {background:url(images/footerbg.png) repeat-x; height:294px; width:940px; margin:0 auto; padding:0 20px;}
+#pagefooter {background:url(images/footerbg.jpg) repeat-x; height:auto; width:100%; padding-top:11px;}
+#bottom {background:url(images/footerbg.png) repeat-x; height:294px; width:940px; margin:0 auto; padding:0 20px;display: none;}
 #bottom .block1 { width:300px; padding:20px 20px 20px 0; background:url(images/footerblockdiv.png) right top repeat-y; height:254px; float:left;}
 #bottom .block2 {width:260px; padding:20px 0 20px 60px; height:254px; background:url(images/footerblockdiv.png) left top repeat-y; float:right;}
 #bottom .block3 {margin:0 330px 0 345px; padding:20px 0 20px; height:254px;}
