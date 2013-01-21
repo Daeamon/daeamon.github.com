@@ -143,8 +143,8 @@ transition: all 0.5s ease;
 }
 #topcolumns .contented:hover
 {
--webkit-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1);
-box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 1);
+-webkit-box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.1),3px 0px 3px 0px rgba(0, 0, 0, 0.1);
+box-shadow: -3px 0px 3px 0px rgba(0, 0, 0, 0.1),3px 0px 3px 0px rgba(0, 0, 0, 0.1);
 }
 #topcolumns ul li:hover 
 {
