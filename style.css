@@ -134,7 +134,10 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 
 
 /*********************** injection by Daeamon 21.01.2013 **************************************/
-
+#topcolumns ul li:hover 
+{
+color:#000;
+}
 #topcolumns ul li
 {
 display: block;
@@ -142,6 +145,11 @@ background: url(images/pix.png) left center no-repeat;
 line-height: 22px;
 margin-bottom: 5px;
 padding-left: 25px;
+color:#707070;
+transition: all 0.5s ease;
+-moz-transition: all 0.5s ease; /* Firefox 4 */
+-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+-o-transition: all 0.5s ease; /* Opera */
 }
 #slider .txtholder p:hover
 {
