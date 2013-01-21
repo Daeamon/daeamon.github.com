@@ -134,6 +134,28 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 
 
 /*********************** injection by Daeamon 21.01.2013 **************************************/
+#sidebar ul li
+{
+line-height: 20px;
+border-bottom: solid 1px #ddd;
+padding: 5px 0 0 25px;
+background: url(images/sidebarli.gif) left 7px no-repeat;
+display: block;
+}
+#sidebar ul li a {
+line-height: initial;
+border-bottom: none 0;
+padding: 0;
+background: none;
+display: initial;
+}
+
+#sidebar ul li a:hover
+{
+text-decoration:none;
+background: none;
+color: #1b78a8;
+}
 #sitenav
 {
 visibility:hidden;
