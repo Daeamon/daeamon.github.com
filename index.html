@@ -198,20 +198,17 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 			i=0;
 			
 			$(xml).find("job").each(
-			resp_='';
+			
 				function () 
 				{
+					//resp='';
 					++i;
-					$(this).find("resp").each
-						(
-							function () 
-							{
-								resp_=resp_+'<p>' + $(this).text() + '</p>'
+					$(this).find("resp").each(
+							function () {
+								resp = resp + '<p>' + $(this).text() + '</p>';
 							}
-						)
-					$('#topcolumns').append
-					(
-						'<div class="col">' +
+						);
+					$('#topcolumns').append('<div class="col">' +
 						'<h2>'+
 						$(this).find("dates").text() +
 						'</h2>'+
@@ -221,11 +218,11 @@ Do Not Remove this Credits and Link back to CSSHeaven from the template-->
 						'<p>'+
 						$(this).find("post").text() +
 						'</p>'+
-						resp_
+						resp
 						 +
 						'</div>' 
 					);
-					if(i mod 3 == 0){$('#topcolumns').append('<div class="clear"></div>');}
+					//if(i mod 3 == 0){$('#topcolumns').append('<div class="clear"></div>');}
 					/*$(".main").append('<div class="book"><div class="title">' + $(this).find("Title").text() + '</div><div class="description">' + $(this).find("Description").text() + '</div><div class="date">Published ' + $(this).find("Date").text() + '</div></div>');
 					$(".book").fadeIn(1000);*/
 					
