@@ -135,9 +135,13 @@ input.btn {display:block; height:30px; padding:0 15px 0 15px; float:left; border
 
 /*********************** injection by Daeamon 21.01.2013 **************************************/
 
-#topcolumns
+#topcolumns ul li
 {
-
+display: block;
+background: url(images/pix.png) left center no-repeat;
+line-height: 22px;
+margin-bottom: 5px;
+padding-left: 25px;
 }
 #slider .txtholder p:hover
 {
