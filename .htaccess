@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^daeamon.github.com [NC,OR] 
+RewriteCond %{HTTP_HOST} ^daeamon.github.io [NC,OR] 
+RewriteCond %{HTTP_HOST} ^www.daeamon.github.com [NC] 
+RewriteRule ^(.*)$ http://daeamon.ru [L,R=301,NC]
